@@ -9,8 +9,6 @@
         <!-- 基于当前pom找到父工程 -->
         <relativePath>../zhongzhuan-plus-parent</relativePath>
     </parent>
-
-
     <artifactId>xuecheng-plus-base</artifactId>
 
     <dependencies>
