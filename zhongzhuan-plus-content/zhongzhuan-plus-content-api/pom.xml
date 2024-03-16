@@ -80,6 +80,16 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            //添加阿里云服务
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            </dependency>
+            //配置依赖
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
