@@ -1,12 +1,12 @@
-package com.xuecheng.media.api;
+package com.zhongzhuan.media.api;
 
-import com.xuecheng.base.model.PageParams;
-import com.xuecheng.base.model.PageResult;
-import com.xuecheng.media.model.dto.QueryMediaParamsDto;
-import com.xuecheng.media.model.dto.UploadFileParamsDto;
-import com.xuecheng.media.model.dto.UploadFileResultDto;
-import com.xuecheng.media.model.po.MediaFiles;
-import com.xuecheng.media.service.MediaFileService;
+import com.zhongzhuan.base.model.PageParams;
+import com.zhongzhuan.base.model.PageResult;
+import com.zhongzhuan.media.model.dto.QueryMediaParamsDto;
+import com.zhongzhuan.media.model.dto.UploadFileParamsDto;
+import com.zhongzhuan.media.model.dto.UploadFileResultDto;
+import com.zhongzhuan.media.model.po.MediaFiles;
+import com.zhongzhuan.media.service.MediaFileService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
