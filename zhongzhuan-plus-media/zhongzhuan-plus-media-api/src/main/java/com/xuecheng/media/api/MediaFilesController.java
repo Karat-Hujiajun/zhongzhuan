@@ -2,11 +2,11 @@ package com.zhongzhuan.media.api;
 
 import com.zhongzhuan.base.model.PageParams;
 import com.zhongzhuan.base.model.PageResult;
-import com.zhongzhuan.media.model.dto.QueryMediaParamsDto;
-import com.zhongzhuan.media.model.dto.UploadFileParamsDto;
-import com.zhongzhuan.media.model.dto.UploadFileResultDto;
-import com.zhongzhuan.media.model.po.MediaFiles;
-import com.zhongzhuan.media.service.MediaFileService;
+import com.zhongzhuan.model.media.model.dto.QueryMediaParamsDto;
+import com.zhongzhuan.model.media.model.dto.UploadFileParamsDto;
+import com.zhongzhuan.model.media.model.dto.UploadFileResultDto;
+import com.zhongzhuan.model.media.model.po.MediaFiles;
+import com.zhongzhuan.model.media.service.MediaFileService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

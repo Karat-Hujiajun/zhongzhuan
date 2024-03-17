@@ -1,8 +1,8 @@
 package com.zhongzhuan.media.api;
 
 import com.zhongzhuan.base.model.RestResponse;
-import com.zhongzhuan.media.model.dto.UploadFileParamsDto;
-import com.zhongzhuan.media.service.MediaFileService;
+import com.zhongzhuan.model.media.model.dto.UploadFileParamsDto;
+import com.zhongzhuan.model.media.service.MediaFileService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
