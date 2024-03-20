@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>com.xuecheng</groupId>
-            <artifactId>xuecheng-plus-generator</artifactId>
+            <artifactId>zhongzhuan-plus-generator</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
