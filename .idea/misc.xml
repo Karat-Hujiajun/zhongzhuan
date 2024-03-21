@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/zhongzhuan-plus-message-sdk/pom.xml" />
         <option value="$PROJECT_DIR$/zhongzhuan-plus-search/pom.xml" />
         <option value="$PROJECT_DIR$/zhongzhuan-plus-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/zhongzhuan-plus-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/zhongzhuan-plus-checkcode/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

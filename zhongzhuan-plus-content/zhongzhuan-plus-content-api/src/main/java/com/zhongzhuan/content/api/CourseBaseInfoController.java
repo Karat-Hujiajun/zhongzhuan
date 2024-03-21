@@ -27,6 +27,12 @@ public class CourseBaseInfoController {
     @Api0peration("根据课程id查询接口")
     @GetMapping("/course/{courseId}")
     public CourseBaseInfoDto getCourseBaseInfo(@PathVariable long courseId){
+        //获取当前用户的身份
+//        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//        System.out.println(principal);
+        SecurityUtil.XcUser user = SecurityUtil.getUser();
+        System.out.println(user.getUsername());
+        CourseBaseInfoDto courseBaseInfo = courseBaseInfoService.getCourseBaseInfo(courseId);
         return courseBaseInfoService.getCourseBaseInfo(courseId);
     }
 
