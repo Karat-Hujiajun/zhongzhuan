@@ -1,7 +1,7 @@
-package com.xuecheng.ucenter.mapper;
+package com.zhongzhuan.ucenter.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xuecheng.ucenter.model.po.XcUser;
+import com.zhongzhuan.ucenter.model.po.XcUser;
 
 /**
  * <p>

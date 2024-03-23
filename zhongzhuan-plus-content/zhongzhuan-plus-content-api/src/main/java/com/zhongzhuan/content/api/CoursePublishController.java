@@ -23,6 +23,30 @@ public class CoursePublishController {
     @Autowired
     CoursePublishService coursePublishService;
 
+    @ApiOperation("获取课程发布信息")
+    @ResponseBody
+    @GetMapping("/course/whole/{courseId}")
+    public CoursePreviewDto getCoursePublish(@PathVariable("courseId") Long courseId) {
+        //封装数据
+        CoursePreviewDto coursePreviewDto = new CoursePreviewDto();
+
+        //查询课程发布表
+        CoursePublish coursePublish = coursePublishService.getCoursePublish(courseId);
+        if(coursePublish == null){
+            return coursePreviewDto;
+        }
+        //开始向coursePreviewDto填充数据
+        CourseBaseInfoDto courseBaseInfoDto = new CourseBaseInfoDto();
+        BeanUtils.copyProperties(coursePublish,courseBaseInfoDto);
+        //课程计划信息
+        String teachplanJson = coursePublish.getTeachplan();
+        //转成List<TeachplanDto>
+        List<TeachplanDto> teachplanDtos = JSON.parseArray(teachplanJson, TeachplanDto.class);
+        coursePreviewDto.setCourseBase(courseBaseInfoDto);
+        coursePreviewDto.setTeachplans(teachplanDtos);
+        return coursePreviewDto;
+
+    }
 
     @GetMapping("/coursepreview/{courseId}")
     public ModelAndView preview(@PathVariable("courseId") Long courseId) {

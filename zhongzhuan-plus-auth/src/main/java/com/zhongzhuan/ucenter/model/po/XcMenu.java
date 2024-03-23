@@ -1,4 +1,4 @@
-package com.xuecheng.ucenter.model.po;
+package com.zhongzhuan.ucenter.model.po;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

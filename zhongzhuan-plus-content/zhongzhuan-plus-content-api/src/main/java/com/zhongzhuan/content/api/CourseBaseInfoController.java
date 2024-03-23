@@ -17,10 +17,16 @@ public class CourseBaseInfoController {
     @Api0peration("新增课程")
     @PostMapping("/content/course")
     public CourseBaseInfoDto createCourseBase(@RequestBody @Validated(ValidationGroups.Inster.class) AddCourseDto addCourseDto){
-        //获取到用户所属机构的id
-        Long companyId = 1232141425L;
+        //当前登录用户
+        SecurityUtil.XcUser user = SecurityUtil.getUser();
+        //用户所属机构id
+        Long companyId = null;
+        if(StringUtils.isNotEmpty(user.getCompanyId())){
+            companyId = Long.parseLong(user.getCompanyId());
+        }
 
-        CourseBaseInfoDto courseBase = courseBaseInfoService.createcourseBase(companyId, addcourseDto);
+
+        PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(companyId,pageParams, queryCourseParamsDto);
         return courseBase;
     }
 

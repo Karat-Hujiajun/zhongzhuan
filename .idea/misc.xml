@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/zhongzhuan-plus-auth/pom.xml" />
         <option value="$PROJECT_DIR$/zhongzhuan-plus-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/zhongzhuan-plus-checkcode/pom.xml" />
+        <option value="$PROJECT_DIR$/zhongzhuan-plus-learning/pom.xml" />
+        <option value="$PROJECT_DIR$/zhongzhuan-plus-orders/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
